@@ -76,6 +76,7 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\22482\source\repos\GL_TEST\GL_TEST\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -115,6 +116,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="InitShader.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="fshader.glsl" />
+    <None Include="sphere.off" />
+    <None Include="vshader.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Angel.h" />
+    <ClInclude Include="include\CheckError.h" />
+    <ClInclude Include="include\mat.h" />
+    <ClInclude Include="include\TriMesh.h" />
+    <ClInclude Include="include\vec.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
